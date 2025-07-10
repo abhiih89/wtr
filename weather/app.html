@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8" />
+    <title>⛱weather now</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id = "main">
+        <img src="logosun.png" id="logo">
+     <p id="name">Weather Now</p>  
+        <div id = "search">
+
+            <input type="text" id="searchbar" placeholder="Search for a city">
+            <span id = "searchicon">
+                <button><img src="glass.png"></button>
+            </span>
+
+        </div> 
+
+
+        <div id = "wthr">
+            <div id="weathericon">
+                <img src="rain.png" id="icons" >
+            </div>
+            <h1 id="climate">Rainy</h1>
+            <h2 id="city">Thrissur </h2>    
+        </div>
+
+        <div id = "info">
+
+            <div id = "humidity">
+                <img src="humidity.svg" id="humidityicon">
+
+                <div>
+                    <span id="humidityvalue"><p>30%</p></span> 
+                    <p>Humidity</p>
+                </div>
+
+            </div>
+
+            <div id = "temperature">
+                <img src="temp.svg" id="tempicon">
+
+                <div>
+                    <span id="temperaturevalue"><p>25°C</p></span>
+                    <p>Temperature</p>
+                </div>
+
+            </div>
+
+            <div id = "wind">
+                <img src="wind1.svg" id="windicon">
+
+                <div>
+                    <span id="windvalue"><p>15 km/h</p></span>
+                    <p >Wind speed</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>   
+<script src="app.js"></script>
+</body>
+</html>
