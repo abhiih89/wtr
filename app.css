@@ -1,21 +1,24 @@
-body {
-  background-image: linear-gradient(to bottom right, #007bff, #e5a227);
+html, body {
+  background-image: linear-gradient(to bottom right, #9718ff, #203065);
+  margin: 0;
+  padding: 0;
   height: 100%;
-  
 }
+
 
 #logo{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 125px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
+  
 }
 
 #name {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: poppins, sans-serif;
   font-size: 30px;
   color: white;
   margin-top: 5px;
@@ -31,7 +34,6 @@ body {
 
 
 #searchbar {
-  
   width: 50%;
   height: 50px;
   border-radius: 50px 0px 0px 50px ;
@@ -40,29 +42,31 @@ body {
   border: none;
   outline: none;
   margin-left: 15px;
+  color: rgb(0, 0, 0);
+  font-family: poppins, sans-serif;
+  font-size: 17px;
 }
 
-#searchicon img {
-  background-color: white;
-  margin-top: 4px;
-  height: 52px;
-  width: 50px;
-  border-radius: 0px 50px 50px 0px ;
-  object-fit: cover;
-  border: none;
-  display: block;
+
+
+
+#searchimg {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
-/*#searchicon img:hover {
-  transform: scale(0.9);
-  transition: 0.2s ease;
-}*/
 
 #searchicon button{
-  
-  padding: 0;
+  width: 52px;
+  height: 52px;
+  background-color: white;
   border: none;
-  background: none;
+  border-radius: 0px 50px 50px 0px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   
 }
@@ -76,75 +80,89 @@ body {
 }
 
 #icons{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 h1{
   text-align: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-family: poppins, sans-serif;
   font-size: 40px;
   color: white;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 h2 {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
+  font-family: poppins, sans-serif;
+  font-size: 25px;
   color: white;
   margin-top: -30px;
+  font-weight: normal;
 }
 
 #info{
  display: flex;
+ width: 100%;
  justify-content: center;
- margin-top: 10px;
- gap: 0px;
+ gap: 10px;
  flex-wrap: wrap;
- animation: fadeIn 0.6s ease;
- margin-top: -40px;
+ margin-top: 50px;
 }
-
+.fade {
+  animation: fadeIn 1s ease-in-out;
+}
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 #humidity, #temperature, #wind {
-  justify-items: auto;
   display: flex;
-  height: auto;
-  width: 155px;
-  object-fit: contain;
   align-items: center;
-  justify-content: center;
-  margin: 10px;
-  color: white;
-  font-size: 14px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  justify-content: flex-start;
+  gap: 10px;
 
+  background-color: rgba(255, 255, 255, 0.1); /* semitransparent box  width: 200px; */
+  border-radius: 20px;
+  padding: 15px 20px;
+  color: white;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: poppins, sans-serif; /
+  font-size: 14px;
 }
 
 #humidityvalue , #windvalue , #temperaturevalue {
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: semi-bold;
+  margin: 0;
+  
 }
 
 
 
 #tempicon{
-
-  width: 50px;
-  height: 70px;
+  width: 20px;
+  height: 50px;
   margin-right: 10px;
-  
 }
 
 #humidityicon, #windicon {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 60px;
   margin-right: 10px;
 }
+
+#humidityinfo, #temperatureinfo, #windinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins, sans-serif;
+}
+ 
+
 
 
 

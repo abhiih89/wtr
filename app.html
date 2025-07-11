@@ -8,21 +8,21 @@
 </head>
 <body>
     <div id = "main">
-        <img src="logosun.png" id="logo">
-     <p id="name">Weather Now</p>  
+        <img src="logoname.svg" id="logo">
+      <!-- <p id="name">Weather Now</p> ##> -->
         <div id = "search">
 
-            <input type="text" id="searchbar" placeholder="Search for a city">
-            <span id = "searchicon">
-                <button><img src="glass.png"></button>
-            </span>
+            <input type="text" id="searchbar" placeholder="Search for a city" spellcheck="false">
+            <div id = "searchicon">
+                <button><img id="searchimg" src="search.svg"></button>
+            </div>
 
         </div> 
 
 
         <div id = "wthr">
             <div id="weathericon">
-                <img src="rain.png" id="icons" >
+                <img src="rain.svg" id="icons" >
             </div>
             <h1 id="climate">Rainy</h1>
             <h2 id="city">Thrissur </h2>    
@@ -31,10 +31,10 @@
         <div id = "info">
 
             <div id = "humidity">
-                <img src="humidity.svg" id="humidityicon">
+                <img src="humi.svg" id="humidityicon">
 
-                <div>
-                    <span id="humidityvalue"><p>30%</p></span> 
+                <div id="humidityinfo">
+                    <p id="humidityvalue">30%</p>
                     <p>Humidity</p>
                 </div>
 
@@ -43,18 +43,18 @@
             <div id = "temperature">
                 <img src="temp.svg" id="tempicon">
 
-                <div>
-                    <span id="temperaturevalue"><p>25°C</p></span>
+                <div id = "temperatureinfo">
+                    <p id="temperaturevalue">25°C</p>
                     <p>Temperature</p>
                 </div>
 
             </div>
 
             <div id = "wind">
-                <img src="wind1.svg" id="windicon">
+                <img src="windi.svg" id="windicon">
 
-                <div>
-                    <span id="windvalue"><p>15 km/h</p></span>
+                <div id="windinfo">
+                    <p id="windvalue">15 km/h</p>
                     <p >Wind speed</p>
                 </div>
 
